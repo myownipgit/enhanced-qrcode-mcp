@@ -6,21 +6,28 @@
 
 An advanced **Model Context Protocol (MCP) server** that generates QR codes and **automatically saves them as PNG files** with comprehensive metadata, batch processing capabilities, and file management tools.
 
+> **🔗 Dual Implementation Strategy**  
+> This **Python implementation** focuses on **reliable file generation and batch processing**.  
+> For **advanced styling, analysis, and templates**, see our **[TypeScript implementation](https://github.com/myownipgit/mcp-server-qrcode-enhanced)**.
+
 > **Built upon and enhanced from**: [@jwalsh/mcp-server-qrcode](https://github.com/jwalsh/mcp-server-qrcode)
 > 
 > This enhanced version adds automatic file generation, metadata tracking, batch processing, and production-ready features while maintaining full compatibility with the MCP protocol.
 
 ## 🚀 Key Enhancements Over Original
 
-| Feature | Original MCP | Enhanced MCP |
-|---------|--------------|---------------|
-| **PNG File Output** | ❌ Chat display only | ✅ **Automatic PNG file saving** |
-| **Directory Management** | ❌ None | ✅ **Custom output directories** |
-| **Metadata Tracking** | ❌ None | ✅ **JSON metadata files** |
-| **Batch Processing** | ❌ One at a time | ✅ **Multiple QR codes per call** |
-| **File Organization** | ❌ None | ✅ **Structured file management** |
-| **Custom Filenames** | ❌ None | ✅ **User-defined naming** |
-| **Production Ready** | ❌ Basic | ✅ **Complete test suite & docs** |
+| Feature | Original MCP | Enhanced Python MCP | Enhanced TypeScript MCP |
+|---------|--------------|---------------------|-------------------------|
+| **PNG File Output** | ❌ Chat display only | ✅ **Automatic PNG file saving** | ✅ Multiple formats (PNG, SVG, PDF) |
+| **Directory Management** | ❌ None | ✅ **Custom output directories** | ✅ Configurable paths |
+| **Metadata Tracking** | ❌ None | ✅ **JSON metadata files** | ✅ Comprehensive metadata |
+| **Batch Processing** | ❌ One at a time | ✅ **Multiple QR codes per call** | ✅ Advanced batch features |
+| **File Organization** | ❌ None | ✅ **Structured file management** | ✅ Template-based organization |
+| **Custom Filenames** | ❌ None | ✅ **User-defined naming** | ✅ Smart naming patterns |
+| **Production Ready** | ❌ Basic | ✅ **Complete test suite & docs** | ✅ Enterprise features |
+| **Advanced Styling** | ❌ None | 🔄 **Planned (see [ROADMAP](ROADMAP.md))** | ✅ **Full styling engine** |
+| **QR Analysis** | ❌ None | 🔄 **Planned (see [ROADMAP](ROADMAP.md))** | ✅ **Decode & quality analysis** |
+| **Templates** | ❌ None | 🔄 **Planned (see [ROADMAP](ROADMAP.md))** | ✅ **Pre-defined templates** |
 
 ## 🛠️ Installation
 
@@ -213,6 +220,33 @@ python3 tests/test_server.py
 - **Q (Quartile)**: ~25% damage recovery - industrial environments  
 - **H (High)**: ~30% damage recovery - outdoor/damaged surfaces
 
+## 🚀 Future Enhancements
+
+See our comprehensive **[ROADMAP.md](ROADMAP.md)** for detailed development plans including:
+
+### 🔄 Coming Soon (v2.1.0)
+- **Structured content builders** for vCard, WiFi, and events
+- **SVG and PDF output formats**
+- **Enhanced validation** and content optimization
+
+### 🎨 Advanced Features (Available in TypeScript Version)
+Our **[TypeScript implementation](https://github.com/myownipgit/mcp-server-qrcode-enhanced)** already includes:
+- **Custom styling** with colors, logos, and gradients
+- **QR code analysis** and decoding capabilities
+- **Template system** with pre-defined styles
+- **Quality assessment** tools with recommendations
+
+### 🔗 Choosing the Right Implementation
+
+| Use Case | Recommended Version |
+|----------|-------------------|
+| **File generation & batch processing** | 🐍 **Python version** (this repo) |
+| **Advanced styling & customization** | 🟨 **TypeScript version** |
+| **QR code analysis & decoding** | 🟨 **TypeScript version** |
+| **Production file workflows** | 🐍 **Python version** (this repo) |
+| **Template-based generation** | 🟨 **TypeScript version** |
+| **Metadata tracking & organization** | 🐍 **Python version** (this repo) |
+
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -267,9 +301,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Related Projects
 
-- [Original MCP QR Code Server](https://github.com/jwalsh/mcp-server-qrcode) - The foundation this builds upon
-- [Model Context Protocol](https://github.com/modelcontextprotocol) - MCP specification and tools
-- [Claude Desktop](https://claude.ai) - AI assistant with MCP support
+- **[Enhanced TypeScript Version](https://github.com/myownipgit/mcp-server-qrcode-enhanced)** - Advanced styling and analysis features
+- **[Original MCP QR Code Server](https://github.com/jwalsh/mcp-server-qrcode)** - The foundation this builds upon
+- **[Model Context Protocol](https://github.com/modelcontextprotocol)** - MCP specification and tools
+- **[Claude Desktop](https://claude.ai)** - AI assistant with MCP support
 
 ## 📊 Repository Stats
 
