@@ -1,8 +1,9 @@
-# Python
+# Python-specific
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -16,26 +17,51 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-PYTHONPATH
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
 # Virtual environments
-venv/
 env/
+venv/
 ENV/
 env.bak/
 venv.bak/
+.env
+.venv
 
-# IDE
+# IDEs and editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
+.ropeproject
 
-# OS
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -43,49 +69,239 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Project specific
+# QR Code output directories and files
 qr_output/
+qr_codes/
+qr-codes/
+generated-qr-codes/
+output/
+batch_output/
+marketing_campaign/
+print_ready/
+restaurant_qr_codes/
+conference_2025/
+marketing/
+restaurant/
+web_assets/
+print_production/
+
+# Generated QR code files
 *.png
-*.jpg
-*.jpeg
-*.gif
 *.svg
+*.pdf
+*.jpeg
+*.jpg
+*.gif
+*.bmp
+
+# Metadata files
 *_metadata.json
 batch_manifest_*.json
+
+# Test output
+test-qr-codes/
+sample-qr/
 test_output/
-integration_test/
 
 # Logs
-*.log
 logs/
-
-# Test coverage
-.coverage
-htmlcov/
-.pytest_cache/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
+*.log
+log/
 
 # Temporary files
+tmp/
+temp/
+.tmp/
 *.tmp
-*.temp
+
+# Configuration files with sensitive data
+config.local.py
+settings.local.py
+.secrets
+secrets.json
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
 
 # Documentation build
 docs/_build/
-site/
+docs/generated/
+api-docs/
 
-# Package files
-*.tar.gz
-*.zip
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Backup files
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# celery beat schedule file
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Editor backup files
+*~
 *.bak
 *.backup
 
-# Editor config
-.vimrc
-.nvimrc
+# Package manager files
+Pipfile
+poetry.toml
+
+# MCP server specific
+server.log
+mcp.log
+debug.log
+
+# Performance profiling
+*.prof
+*.pstats
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.backup
+*.old
+
+# MacOS specific
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux specific
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Development and testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Local development overrides
+local_settings.py
+local_config.py
+dev_settings.py
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory (if mixed projects)
+.npm
+
+# Optional REPL history
+.python_history
+
+# Flask instance folder
+instance/
+
+# Django specific
+*.pot
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# FastAPI specific
+.pytest_cache/
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython history
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# AWS credentials
+.aws/
+
+# Google Cloud credentials
+.gcloud/
+service-account-key.json
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+
+# Certificates
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# API keys and secrets
+api_keys.txt
+secrets.txt
+credentials.json
