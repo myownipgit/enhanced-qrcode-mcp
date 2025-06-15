@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "enhanced-qrcode": {
+      "command": "python3",
+      "args": ["/path/to/enhanced-qrcode-mcp/src/enhanced_qrcode_server.py"],
+      "env": {},
+      "description": "Enhanced QR code generator with automatic PNG file saving and batch processing - Built upon @jwalsh/mcp-server-qrcode"
+    }
+  }
+}
